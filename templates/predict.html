@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary Prediction Form</title>
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Predict Salary</h1>
+
+        <form action="/result" method="POST" class="mt-4">
+            <div class="form-group">
+                <label for="Company_Name">Company Name</label>
+                <input type="text" class="form-control" id="Company_Name"
+                       name="Company Name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Job_Title">Job Title</label>
+                <input type="text" class="form-control" id="Job_Title"
+                       name="Job Title" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Location">Location</label>
+                <input type="text" class="form-control" id="Location"
+                       name="Location" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Job_Roles">Job Roles</label>
+                <input type="text" class="form-control" id="Job_Roles"
+                       name="Job Roles" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Employment_Status">Employment Status</label>
+                <input type="text" class="form-control" id="Employment_Status"
+                       name="Employment Status" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Salaries_Reported">Salaries Reported</label>
+                <input type="number" min="1" class="form-control"
+                       id="Salaries_Reported" name="Salaries Reported" required>
+            </div>
+
+            <div class="form-group">
+                <label for="Rating">Rating</label>
+                <input type="number" step="any" class="form-control" id="Rating"
+                       name="Rating" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
