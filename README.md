@@ -78,7 +78,7 @@ This project predicts the salaries of software professionals based on various fe
 
 ## Hyperparameter Tuning
 - Used `RandomizedSearchCV` for XGBoost with a wide parameter grid
-- Best parameters improved R² to ~0.25 on the test set
+- Best parameters improved R² to ~0.48 on the test set
 
 ## Web App (Flask Deployment)
 - **Frontend:** Simple forms for user input (company, job title, location, etc.)
