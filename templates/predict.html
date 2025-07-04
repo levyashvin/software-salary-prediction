@@ -4,58 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salary Prediction Form</title>
-    <link rel="stylesheet"
-          href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background: linear-gradient(120deg, #f8fafc 0%, #e2e8f0 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .center-card {
+            max-width: 480px;
+            margin: auto;
+            margin-top: 6vh;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+            border-radius: 18px;
+            background: #fff;
+            padding: 2.5rem 2rem 2rem 2rem;
+        }
+        .icon {
+            font-size: 2.5rem;
+            color: #2563eb;
+            margin-bottom: 0.5rem;
+        }
+        .form-group label {
+            font-weight: 500;
+        }
+        .form-control {
+            border-radius: 10px;
+            font-size: 1.05rem;
+        }
+        .btn-primary {
+            border-radius: 10px;
+            font-size: 1.1rem;
+            padding: 0.6rem 0;
+        }
+        .helper-text {
+            font-size: 0.95rem;
+            color: #6b7280;
+            margin-bottom: 1.2rem;
+        }
+        footer {
+            margin-top: auto;
+            text-align: center;
+            color: #888;
+            font-size: 0.95rem;
+            padding: 1.5rem 0 0.5rem 0;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <h1 class="mt-5">Predict Salary</h1>
-
-        <form action="/result" method="POST" class="mt-4">
+    <div class="center-card">
+        <div class="icon text-center">📝</div>
+        <h2 class="mb-2 text-center">Salary Prediction Form</h2>
+        <div class="helper-text text-center mb-3">Enter job and company details to get an instant salary prediction.</div>
+        <form action="/result" method="POST" class="mt-2">
             <div class="form-group">
                 <label for="Company_Name">Company Name</label>
-                <input type="text" class="form-control" id="Company_Name"
-                       name="Company Name" required>
+                <input type="text" class="form-control" id="Company_Name" name="Company Name" placeholder="e.g. Google" required>
             </div>
-
             <div class="form-group">
                 <label for="Job_Title">Job Title</label>
-                <input type="text" class="form-control" id="Job_Title"
-                       name="Job Title" required>
+                <input type="text" class="form-control" id="Job_Title" name="Job Title" placeholder="e.g. Software Engineer" required>
             </div>
-
             <div class="form-group">
                 <label for="Location">Location</label>
-                <input type="text" class="form-control" id="Location"
-                       name="Location" required>
+                <input type="text" class="form-control" id="Location" name="Location" placeholder="e.g. Bangalore" required>
             </div>
-
             <div class="form-group">
                 <label for="Job_Roles">Job Roles</label>
-                <input type="text" class="form-control" id="Job_Roles"
-                       name="Job Roles" required>
+                <input type="text" class="form-control" id="Job_Roles" name="Job Roles" placeholder="e.g. Backend Developer" required>
             </div>
-
             <div class="form-group">
                 <label for="Employment_Status">Employment Status</label>
-                <input type="text" class="form-control" id="Employment_Status"
-                       name="Employment Status" required>
+                <input type="text" class="form-control" id="Employment_Status" name="Employment Status" placeholder="e.g. Full Time" required>
             </div>
-
             <div class="form-group">
                 <label for="Salaries_Reported">Salaries Reported</label>
-                <input type="number" min="1" class="form-control"
-                       id="Salaries_Reported" name="Salaries Reported" required>
+                <input type="number" min="1" class="form-control" id="Salaries_Reported" name="Salaries Reported" placeholder="e.g. 10" required>
             </div>
-
             <div class="form-group">
                 <label for="Rating">Rating</label>
-                <input type="number" step="any" class="form-control" id="Rating"
-                       name="Rating" required>
+                <input type="number" step="any" class="form-control" id="Rating" name="Rating" placeholder="e.g. 4.2" required>
             </div>
-
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary btn-block mt-3">Predict Salary</button>
         </form>
     </div>
+    <footer>
+        &copy; 2024 Software Salary Prediction &mdash; by Yuva Yashvin, Yuvan Bharathi, Ritvik Marwah
+    </footer>
 </body>
 </html>

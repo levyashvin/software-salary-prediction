@@ -5,12 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Salary Prediction</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background: linear-gradient(120deg, #f8fafc 0%, #e2e8f0 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .center-card {
+            max-width: 420px;
+            margin: auto;
+            margin-top: 8vh;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+            border-radius: 18px;
+            background: #fff;
+            padding: 2.5rem 2rem 2rem 2rem;
+        }
+        .icon {
+            font-size: 3rem;
+            color: #2563eb;
+            margin-bottom: 0.5rem;
+        }
+        footer {
+            margin-top: auto;
+            text-align: center;
+            color: #888;
+            font-size: 0.95rem;
+            padding: 1.5rem 0 0.5rem 0;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <h1 class="mt-5">Welcome to the Salary Prediction System</h1>
-        <p class="lead">To predict the salary based on job information, click below to proceed to the prediction form.</p>
-        <a href="/predict" class="btn btn-primary mt-3">Go to Prediction</a>
+    <div class="center-card text-center">
+        <div class="icon">💼</div>
+        <h1 class="mb-3">Welcome</h1>
+        <p class="lead mb-4">Predict software industry salaries with a modern, data-driven approach.</p>
+        <a href="/predict" class="btn btn-primary btn-lg btn-block">Start Prediction</a>
     </div>
+    <footer>
+        &copy; 2024 Software Salary Prediction &mdash; by Yuva Yashvin, Yuvan Bharathi, Ritvik Marwah
+    </footer>
 </body>
 </html>
