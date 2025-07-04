@@ -4,3 +4,4 @@ scikit-learn==1.6.1
 pandas==2.2.2
 numpy==2.0.2
 category_encoders==2.8.1
+catboost==1.2.8
